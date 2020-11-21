@@ -6,7 +6,6 @@ import {
   MuiPickersUtilsProvider,
 } from '@material-ui/pickers';
 import Moment from 'moment';
-import { render } from '@testing-library/react';
 // https://material-ui-pickers.dev/guides/css-overrides
 
 
@@ -42,11 +41,11 @@ function App() {
           </MuiPickersUtilsProvider>
         </div>
         <input disabled = {!input} type="submit" className='add_button' value="Add a task" onClick= {addtask}/>
-        
+
         <ul>
           {todos.map(todo =>{return <li>{todo}</li>;})}
           {schedule.map(datetime =>{return <li>{
-              Moment(datetime).format('DD mm YYYY')
+              Moment(datetime).format('LLLL')
           }</li>;})}
         </ul>
       
