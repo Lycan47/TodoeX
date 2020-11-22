@@ -3,6 +3,9 @@ import DateFnsUtils from '@date-io/date-fns';
 import './App.css';
 import Tasklist from './Tasklist';
 import Button from '@material-ui/core/Button';
+import Home from './Home'
+import Header from './Header'
+import Body from './Body'
 
 import {
   DateTimePicker,
@@ -11,10 +14,6 @@ import {
 import TextField from '@material-ui/core/TextField';
 // import Icon from '@material-ui/core/Icon';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
-
-
-
-
 
 
 function App() {
@@ -32,8 +31,19 @@ function App() {
   console.log(dict);
 
   return (
+
       <div className="app">
-      <header className="app_header">
+        
+        <Home/> 
+        {/* Home */}
+              
+              {/* Header */}
+              <Header/>
+              {/* BodyApp */}
+              <Body />
+              {/* Footer */}
+
+      <header className="app__header">
       {/* // New Form Implmentation */}
       <div className="formadd">
         <form onSubmit={addtask}>

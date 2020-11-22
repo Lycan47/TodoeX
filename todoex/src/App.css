@@ -1,11 +1,11 @@
+*{
+    margin: 0;
+}
+
 .app_header{
     align-items: center;
     margin-left: 40px;
     justify-content: center;
-}
-
-.formadd{
-
 }
 
 .formadd_inputfield{
