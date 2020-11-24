@@ -1,28 +1,26 @@
-.body{
-    display: flex;
-    align-content: center;
-    
+.body {
+  display: flex;
+  align-content: center;
 }
 
-.body__today{
-    display: flex;
-    font-size: 22px;
-    font-weight: 700;
-    line-height: 25px;
+.body__today {
+  display: flex;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 25px;
 }
 
-.body__date{
-    display: flex;
-    font-size: small;
-    font-weight: bold;
-    
+.body__date {
+  display: flex;
+  font-size: small;
+  font-weight: bold;
 }
 
-.body__date1{
-    display: flex;
-    color: grey;
-    margin-left: 6px;
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 35px;
+.body__date1 {
+  display: flex;
+  color: grey;
+  margin-left: 6px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 35px;
 }

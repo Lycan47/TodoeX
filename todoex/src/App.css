@@ -1,45 +1,44 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-.app_header{
-    align-items: center;
-    margin-left: 40px;
-    justify-content: center;
+.app_header {
+  align-items: center;
+  margin-left: 40px;
+  justify-content: center;
 }
 
-.formadd_inputfield{
-    width: 300px;
-    border-radius: 10px;    
-    font-size: 14px;
-    padding: 8px;
-    /* overflow-wrap: break-word; */
-    /* word-break: break-word; */ 
+.formadd_inputfield {
+  width: 300px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 8px;
+  /* overflow-wrap: break-word; */
+  /* word-break: break-word; */
 }
 
-.formadd_schedule{
-    width: 200px;
-    height: 100px;
-    border-radius: 10px;    
-    font-size: 14px;
-    padding: 8px;
-    /* overflow-wrap: break-word; */
-    /* word-break: break-word; */
-    
+.formadd_schedule {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding: 8px;
+  /* overflow-wrap: break-word; */
+  /* word-break: break-word; */
 }
 
-.formadd_addbutton{
-    display: flex;
-    flex-direction: column;
-    margin-top: 8px;
-    border-radius: 5px;
-    background-color:#DE4C4A;
-    color: #FFFFFFDE;
-    padding: 10px;
-    font-weight: bold;
+.formadd_addbutton {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  border-radius: 5px;
+  background-color: #de4c4a;
+  color: #ffffffde;
+  padding: 10px;
+  font-weight: bold;
 }
 
-.date_time{
-    display: flex;
-    flex-direction: row;
+.date_time {
+  display: flex;
+  flex-direction: row;
 }
