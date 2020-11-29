@@ -2,43 +2,40 @@
   margin: 0;
 }
 
-.app_header {
+.app__formadd {
+  display: flex;
   align-items: center;
-  margin-left: 40px;
-  justify-content: center;
-}
-
-.formadd_inputfield {
-  width: 300px;
-  border-radius: 10px;
-  font-size: 14px;
-  padding: 8px;
-  /* overflow-wrap: break-word; */
-  /* word-break: break-word; */
-}
-
-.formadd_schedule {
-  width: 200px;
-  height: 100px;
-  border-radius: 10px;
-  font-size: 14px;
-  padding: 8px;
-  /* overflow-wrap: break-word; */
-  /* word-break: break-word; */
-}
-
-.formadd_addbutton {
-  display: flex;
   flex-direction: column;
-  margin-top: 8px;
-  border-radius: 5px;
-  background-color: #de4c4a;
-  color: #ffffffde;
-  padding: 10px;
-  font-weight: bold;
 }
 
-.date_time {
+.formadd__inputfield {
   display: flex;
-  flex-direction: row;
+  width: 100%;
+  max-width: 500px;
+}
+.formadd__inputfield > TextField {
+  width: 100% !important;
+  max-width: 500px !important;
+}
+
+.formadd__schedule {
+  display: flex;
+  /* height: 40px !important; */
+}
+
+.formadd__schedule > DateTimePicker {
+  width: 300px !important;
+}
+
+.formadd__addbutton {
+  display: block;
+}
+
+.formadd__addbutton > Button {
+  height: 40px !important;
+  border-radius: 10px !important;
+  background-color: #de4c4a !important;
+  color: #ffffffde !important;
+  padding: 10px !important;
+  font-weight: bold !important;
 }
