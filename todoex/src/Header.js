@@ -2,33 +2,12 @@ import React, { useState, useEffect } from "react";
 import "./Header.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import IconButton from "@material-ui/core/IconButton";
-// import SearchBar from "material-ui-search-bar";
-import { ThemeProvider, createMuiTheme } from "@material-ui/core/styles";
-import { orange, purple } from "@material-ui/core/colors";
-import TextField from "@material-ui/core/TextField";
 import SearchIcon from "@material-ui/icons/Search";
-// import SettingsIcon from '@material-ui/icons/Settings';
 import AddCircleIcon from "@material-ui/icons/AddCircle";
-import HomeIcon from "@material-ui/icons/Home";
 import NotificationsIcon from "@material-ui/icons/Notifications";
-import { BorderAllRounded } from "@material-ui/icons";
 import Moment from "moment";
 
 function Header() {
-  const theme = createMuiTheme({
-    palette: {
-      primary: {
-        main: orange[700],
-      },
-      secondary: {
-        main: purple[700],
-      },
-    },
-    icon: {
-      color: "red",
-    },
-  });
-
   var [date, setDate] = useState(new Date());
 
   useEffect(() => {

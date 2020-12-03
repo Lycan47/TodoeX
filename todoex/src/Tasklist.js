@@ -15,7 +15,7 @@ function Tasklist(props) {
           <AssignmentIcon />
         </ListItemAvatar>
         <ListItemText
-          primary={props.taskval["task"]}
+          primary={props.taskval["title"]}
           secondary={Moment(props.taskval["date"]).format("LLLL")}
         />
       </ListItem>

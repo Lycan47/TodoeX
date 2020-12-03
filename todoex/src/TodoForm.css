@@ -1,0 +1,52 @@
+.app__formadd {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  margin: 5px;
+}
+
+.formadd__input {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  padding: 5px;
+  margin-left: 10;
+  border: 1px solid lightgrey;
+}
+
+.formadd__inputfield {
+  display: flex;
+  width: 100%;
+  max-width: 500px !important;
+}
+.formadd__inputfield > TextField {
+  width: 100% !important;
+  border: none !important;
+  outline-width: 0 !important;
+}
+
+.formadd__schedule {
+  display: flex;
+  padding: 10px;
+  /* height: 40px !important; */
+}
+
+.formadd__schedule > DateTimePicker {
+  width: 300px !important;
+}
+
+.formadd__addbutton {
+  display: block;
+  padding: 10px;
+}
+
+.formadd__addbutton > Button {
+  height: 40px !important;
+  border-radius: 10px !important;
+  background-color: #de4c4a !important;
+  color: #ffffffde !important;
+  font-weight: bold !important;
+}
