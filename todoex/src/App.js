@@ -10,7 +10,25 @@ function App() {
   const [task, setTask] = useState([]);
 
   const addtask = (input, selectedDate) => {
-    setTask([...task, { title: input, date: selectedDate }]);
+    setTask([...task, { title: input, date: selectedDate, completed: false }]);
+  };
+
+  const removeTask = (index) => {
+    const newTasks = [...task];
+    newTasks.splice(index, 1);
+    setTask(newTasks);
+  };
+
+  const completeTask = (index) => {
+    const newTasks = [...task];
+    newTasks[index].completed = true;
+    setTask(newTasks);
+  };
+
+  const undoAction = (index) => {
+    const newTasks = [...task];
+    newTasks[index].completed = false;
+    setTask(newTasks);
   };
 
   console.log(task);
@@ -29,10 +47,17 @@ function App() {
         <TodoForm addtask={addtask} />
       </div>
 
-      <div className="show_todos">
+      <div className="show__todos">
         <ul>
-          {task.map((todo) => (
-            <Tasklist taskval={todo} />
+          {task.map((taskval, index) => (
+            <Tasklist
+              taskval={taskval}
+              index={index}
+              completeTask={completeTask}
+              removeTask={removeTask}
+              undoAction={undoAction}
+              key={index}
+            />
           ))}
         </ul>
       </div>

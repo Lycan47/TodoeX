@@ -16,6 +16,11 @@ function TodoForm({ addtask }) {
     setInput("");
   };
 
+  const handleCancel = (event) => {
+    event.preventDefault();
+    setInput("");
+  };
+
   return (
     <div className="app__formadd">
       <form onSubmit={handleSubmit}>
@@ -39,20 +44,35 @@ function TodoForm({ addtask }) {
               <DateTimePicker
                 value={selectedDate}
                 onChange={handleDateChange}
+                fullWidth
               />
             </MuiPickersUtilsProvider>
           </div>
         </div>
 
-        <div className="formadd__addbutton">
-          <Button
-            disabled={!input}
-            type="submit"
-            variant="contained"
-            startIcon={<AddCircleIcon />}
-          >
-            Add Task
-          </Button>
+        <div className="formadd__buttons">
+          <div className="formadd__addbutton">
+            <Button
+              disabled={!input}
+              type="submit"
+              variant="contained"
+              startIcon={<AddCircleIcon />}
+            >
+              Add Task
+            </Button>
+          </div>
+
+          <div className="formadd__cancelbutton">
+            <Button
+              disabled={!input}
+              type="submit"
+              variant="contained"
+              onClick={handleCancel}
+              // startIcon={< />}
+            >
+              Cancel
+            </Button>
+          </div>
         </div>
       </form>
     </div>

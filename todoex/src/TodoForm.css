@@ -2,7 +2,7 @@
   display: flex;
   /* align-items: center; */
   flex-direction: column;
-  margin: 5px;
+  margin-left: 400px;
 }
 
 .formadd__input {
@@ -13,7 +13,7 @@
   max-width: 500px;
   border-radius: 10px;
   padding: 5px;
-  margin-left: 10;
+  margin-bottom: 20px;
   border: 1px solid lightgrey;
 }
 
@@ -31,11 +31,17 @@
 .formadd__schedule {
   display: flex;
   padding: 10px;
-  /* height: 40px !important; */
+  width: 50% !important;
 }
 
 .formadd__schedule > DateTimePicker {
   width: 300px !important;
+}
+
+.formadd__buttons {
+  display: flex;
+  /* align-items: center; */
+  /* flex-direction: column; */
 }
 
 .formadd__addbutton {
@@ -48,5 +54,18 @@
   border-radius: 10px !important;
   background-color: #de4c4a !important;
   color: #ffffffde !important;
+  font-weight: bold !important;
+}
+
+.formadd__cancelbutton {
+  align-content: flex-end;
+  padding: 10px;
+}
+
+.formadd__cancelbutton > Button {
+  height: 40px !important;
+  border-radius: 10px !important;
+  /* background-color: #d4d0d0 !important; */
+  color: #de4c4a !important;
   font-weight: bold !important;
 }

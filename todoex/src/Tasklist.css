@@ -1,0 +1,6 @@
+.tasklist {
+}
+
+.tasklist > List {
+  width: 100% !important;
+}
